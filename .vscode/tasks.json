@@ -8,9 +8,10 @@
 			"problemMatcher": []
 		},
 		{
-      "label": "Open Simple Browser",
-      "command": "${input:openSimpleBrowser}"
-    }
+			"label": "Open Simple Browser",
+			"command": "${input:openSimpleBrowser}",
+			"problemMatcher": []
+		}
 	],
 	"inputs": [
 		{
@@ -20,10 +21,12 @@
 			"args": "/projects/vscode-open-url-from-task/package.json"
 		},
 		{
-      "id": "openSimpleBrowser",
-      "type": "command",
-      "command": "simpleBrowser.show",
-      "args": ["https://nodejs.org/"]
-    }
+			"id": "openSimpleBrowser",
+			"type": "command",
+			"command": "simpleBrowser.show",
+			"args": [
+				"https://nodejs.org/"
+			]
+		}
 	]
 }
