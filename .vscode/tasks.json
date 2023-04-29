@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Open File From Task",
+			"command": "${input:openFileInput}",
+			"type": "shell",
+			"problemMatcher": []
+		},
+		{
+      "label": "Open Simple Browser",
+      "command": "${input:openSimpleBrowser}"
+    }
+	],
+	"inputs": [
+		{
+			"id": "openFileInput",
+			"type": "command",
+			"command": "custom-open-command",
+			"args": "/projects/vscode-open-url-from-task/package.json"
+		},
+		{
+      "id": "openSimpleBrowser",
+      "type": "command",
+      "command": "simpleBrowser.show",
+      "args": ["https://nodejs.org/"]
+    }
+	]
+}
